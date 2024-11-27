@@ -97,15 +97,11 @@ class _HomepageState extends State<Homepage> {
               Navigator.pushAndRemoveUntil(
                 context,
                 MaterialPageRoute(builder: (context) => RegistratsiyaPage()),
-                (route) => false, // Barcha sahifalarni tozalash
+                (route) => false, 
               );
 
-              // Foydalanuvchiga xabar ko'rsatish
-              ScaffoldMessenger.of(context).showSnackBar(
-                const SnackBar(
-                  content: Text("Akkaunt muvaffaqiyatli o'chirildi!"),
-                ),
-              );
+             
+              
             },
             icon: const Icon(
               Icons.exit_to_app,
